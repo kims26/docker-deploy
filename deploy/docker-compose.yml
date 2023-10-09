@@ -1,0 +1,8 @@
+version: '3'
+services:
+  spring-boot-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"  # 스프링 부트 애플리케이션의 포트를 호스트 포트에 매핑합니다.
